@@ -12,6 +12,8 @@
 ```javascript
 import ClipboardListener from 'react-native-clipboard-listener';
 
-// TODO: What to do with the module?
-ClipboardListener;
+Clipboard.setListener(callback);
+
+Clipboard.removeListener();
+
 ```
