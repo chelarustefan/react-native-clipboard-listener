@@ -1,23 +1,23 @@
 {
   "name": "react-native-clipboard-listener",
   "title": "React Native Clipboard Listener",
-  "version": "1.0.0",
-  "description": "TODO",
+  "version": "1.0.5",
+  "description": "This can be used to listen to changes in clipboard.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-clipboard-listener.git",
-    "baseUrl": "https://github.com/github_account/react-native-clipboard-listener"
+    "url": "git+https://github.com/stefanc96/react-native-clipboard-listener.git",
+    "baseUrl": "https://github.com/stefanc96/react-native-clipboard-listener"
   },
   "keywords": [
     "react-native"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "yourname@email.com"
+    "name": "Chelaru Stefan",
+    "email": "stefanchelaru96@gmail.com"
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",

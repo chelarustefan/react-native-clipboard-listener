@@ -1,9 +1,14 @@
 package com.reactlibrary;
 
+import android.content.ClipboardManager;
+import android.content.Context;
+
+import androidx.annotation.NonNull;
+
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.Callback;
+import com.facebook.react.modules.core.DeviceEventManagerModule;
 
 public class ClipboardListenerModule extends ReactContextBaseJavaModule {
     private static ReactApplicationContext reactContext;
@@ -12,9 +17,9 @@ public class ClipboardListenerModule extends ReactContextBaseJavaModule {
     private ClipboardManager.OnPrimaryClipChangedListener listener = null;
 
 
-    public ClipboardModule(@NonNull ReactApplicationContext reactContext) {
+    public ClipboardListenerModule(@NonNull ReactApplicationContext reactContext) {
         super(reactContext);
-        ClipboardModule.reactContext = reactContext;
+        ClipboardListenerModule.reactContext = reactContext;
         clipboardMgr = (ClipboardManager) reactContext.getSystemService(Context.CLIPBOARD_SERVICE);
     }
 
