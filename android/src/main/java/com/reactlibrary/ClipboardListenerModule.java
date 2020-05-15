@@ -15,12 +15,20 @@ public class ClipboardListenerModule extends ReactContextBaseJavaModule {
     private ClipboardManager clipboardMgr;
     public static final String CLIPBOARD_TEXT_CHANGED = "CLIPBOARD_TEXT_CHANGED";
     private ClipboardManager.OnPrimaryClipChangedListener listener = null;
+    private Handler mHandler;
 
 
     public ClipboardListenerModule(@NonNull ReactApplicationContext reactContext) {
         super(reactContext);
         ClipboardListenerModule.reactContext = reactContext;
-        clipboardMgr = (ClipboardManager) reactContext.getSystemService(Context.CLIPBOARD_SERVICE);
+        mHandler = new Handler(Looper.getMainLooper()) {
+            @Override
+            public void handleMessage(Message message) {
+                clipboardMgr = (ClipboardManager) reactContext.getSystemService(Context.CLIPBOARD_SERVICE);
+            }
+        };
+        Message message = mHandler.obtainMessage();
+        message.sendToTarget();
     }
 
     @NonNull

@@ -1,7 +1,7 @@
 {
   "name": "react-native-clipboard-listener",
   "title": "React Native Clipboard Listener",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "This can be used to listen to changes in clipboard.",
   "main": "index.js",
   "scripts": {
