@@ -2,6 +2,9 @@ package com.reactlibrary;
 
 import android.content.ClipboardManager;
 import android.content.Context;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
 
 import androidx.annotation.NonNull;
 
@@ -18,7 +21,7 @@ public class ClipboardListenerModule extends ReactContextBaseJavaModule {
     private Handler mHandler;
 
 
-    public ClipboardListenerModule(@NonNull ReactApplicationContext reactContext) {
+    public ClipboardListenerModule(@NonNull final ReactApplicationContext reactContext) {
         super(reactContext);
         ClipboardListenerModule.reactContext = reactContext;
         mHandler = new Handler(Looper.getMainLooper()) {
