@@ -41,7 +41,7 @@ public class ClipboardListenerModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    void setListener() {
+    public void setListener() {
         listener = new ClipboardManager.OnPrimaryClipChangedListener() {
                 @Override
                 public void onPrimaryClipChanged() {
