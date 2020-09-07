@@ -14,7 +14,7 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
 
 
-@ReactModule(name = ClipboardModule.NAME)
+@ReactModule(name = "ClipboardListener")
 public class ClipboardListenerModule extends ReactContextBaseJavaModule {
     private static ReactApplicationContext reactContext;
     private ClipboardManager clipboardMgr;
