@@ -1,12 +1,27 @@
 {
   "name": "react-native-clipboard-listener",
   "title": "React Native Clipboard Listener",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "This can be used to listen to changes in clipboard.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "source": "index",
+  "files": [
+    "src",
+    "lib",
+    "android",
+    "ios",
+    "cpp",
+    "react-native-clipboard-listener.podspec",
+    "!lib/typescript/example",
+    "!android/build",
+    "!ios/build",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stefanc96/react-native-clipboard-listener.git",

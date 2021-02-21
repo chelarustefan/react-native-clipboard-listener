@@ -12,8 +12,8 @@
 ```javascript
 import ClipboardListener from 'react-native-clipboard-listener';
 
-Clipboard.setListener(callback);
+ClipboardListener.setListener(callback);
 
-Clipboard.removeListener();
+ClipboardListener.removeListener();
 
 ```
