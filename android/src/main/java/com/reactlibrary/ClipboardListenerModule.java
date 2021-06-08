@@ -51,7 +51,7 @@ public class ClipboardListenerModule extends ReactContextBaseJavaModule {
                     String contents = clipboardMgr.getText().toString();
                     reactContext
                             .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
-                            .emit(CLIPBOARD_TEXT_CHANGED, null);
+                            .emit(CLIPBOARD_TEXT_CHANGED, contents);
                 }
             };
         clipboardMgr.addPrimaryClipChangedListener(listener);
